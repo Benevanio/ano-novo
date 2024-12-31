@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Ano Novo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        /* Estilo Global */
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: #00ff00;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Estilo da mensagem */
+        .message {
+            font-size: 10vw; /* Tamanho responsivo com base na largura da tela */
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            animation: blink 1s infinite alternate;
+            margin: 0;
+        }
+
+        /* Animação de piscar */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Responsividade para telas pequenas */
+        @media (max-width: 600px) {
+            .message {
+                font-size: 15vw; /* Ajuste o tamanho para telas pequenas */
+            }
+        }
+
+        /* Responsividade para telas muito grandes */
+        @media (min-width: 1500px) {
+            .message {
+                font-size: 8vw; /* Ajuste o tamanho para telas muito grandes */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Feliz Ano Novo</div>
+    <div class="message">2025</div>
+</body>
+</html>
